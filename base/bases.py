@@ -17,7 +17,7 @@ class Base:
             config.read(path,encoding='GB18030')
             return config.get('hj','url')
         elif root_dir.split('\\')[-1]!='':
-            path=root_dir+'ppp\conf\config.ini'
+            path=root_dir+'\ppp\conf\config.ini'
             config.read(path, encoding='GB18030')
             print(path)
             return config.get('hj', 'url')
